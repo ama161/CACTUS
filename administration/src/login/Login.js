@@ -22,6 +22,7 @@ class Login extends Component {
     componentWillMount(){
         isAdmin()
         .then((result) => {
+            console.log(result);
             if(result)
                 this.props.history.push('/home');
         }).catch(error => console.log(error));
@@ -40,6 +41,7 @@ class Login extends Component {
         return (
         <Card className="container-login">
             <CardBody>
+                <span className="container-logo"><span className="logo"></span> <h1>Cactus </h1></span>                
                 <Input 
                     value={this.state.email}
                     type="email" 

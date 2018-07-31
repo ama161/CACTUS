@@ -15,3 +15,15 @@
 .btn-login{
     margin: auto;
 }
+
+.container-logo{
+    display: flex;
+    align-items: baseline;
+    padding: 3%;
+    justify-content: center;
+}
+
+.container-logo .logo{
+    width: 150px;
+    height: 150px;
+}

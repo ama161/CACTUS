@@ -1,7 +1,7 @@
 import firebase from 'firebase';
 
 export function login(email, password){
-    return new Promise((resolve, reject) => {    
+    return new Promise((resolve, reject) => {  
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then((result) =>{
                 var userId = result.user.uid;
